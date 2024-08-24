@@ -1,9 +1,4 @@
 <!DOCTYPE HTML>
-<!--
-	Dimension by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
 	<head>
 		<title>Morgan's Portfolio</title>
@@ -28,9 +23,7 @@
 						<nav>
 							<ul>
 								<li><a href="#spotlight">Spotlight</a></li>
-								<!--
 								<li><a href="#projects">Projects</a></li>
-								-->
 								<li><a href="#about">About</a></li>
 								<!--<li><a href="#elements">Elements</a></li>-->
 							</ul>
@@ -44,22 +37,34 @@
 							<article id="spotlight">
 								<h2 class="major">Spotlight</h2>
 								<span class="image main"><img src="images/LUDWIG.png" alt="" /></span>
-								<p>I was apart of Penn Electric Racing's REV9 LUDWIG design and assembly process last year. This project focused on researching the feasibility of combining the functionality of a dashboard and Data Acquisition (DAQ) systems into a single, improved board named LUDWIG. We aimed to streamline and enhance the vehicle's electronic architecture by integrating data logging with driver interfacing in one board, utilizing the Raspberry Pi Compute Module 4 (CM4). LUDWIG  offered advanced features such as a real user interface on the dashboard, efficient power management with supercapacitors for safe shutdowns, and robust communication via CAN bus and Ethernet. Additionally, it included expandable storage, USB connectivity, and wireless communication, making it a versatile and future-proof solution for later FSAE seasons. The design also considered mechanical integration within the enclosure, ensuring ease of assembly and reliability in operation.</p>
+								<p>This project focused on researching the feasibility of combining the functionality of a dashboard and Data Acquisition (DAQ) systems into a single, improved board named LUDWIG. We aimed to streamline and enhance the vehicle's electronic architecture by integrating data logging with driver interfacing in one board, utilizing the Raspberry Pi Compute Module 4 (CM4). LUDWIG offered advanced features such as a real user interface on the dashboard, efficient power management with supercapacitors for safe shutdowns, and robust communication via CAN bus and Ethernet. Additionally, it included expandable storage, USB connectivity, and wireless communication, making it a versatile and future-proof solution for later FSAE seasons. The design also considered mechanical integration within the enclosure, ensuring ease of assembly and reliability in operation.</p>
 							</article>		
-							<!-- Work 
+							<!-- Projects --> 
 							<article id="projects">
-								<h2 class="major">Projects</h2>
-								<span class="image main"><img src="images/pic02.jpg" alt="" /></span>
-								<p>Adipiscing magna sed dolor elit. Praesent eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices.</p>
-								<p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus pharetra. Pellentesque condimentum sem. In efficitur ligula tate urna. Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus amet feugiat tempus.</p>
+								<h2 class="major">Current Projects</h2>
+								<h3>REV10: DAQDASH</h3>
+								<p>This new revision of the REV9 LUDWIG reduces the device's size by eliminating unused features and improved placement and routing. </p>
+								<h3>MOC 9005</h3>
+								<p>Major overhaul of previous motor controller used on FSAE team, featuring dedicated on-board iCE40 FPGA for reliable fault detection programmed in native Verilog. Redesigning component layout to reduce parasitics while maintaining small form factor and reduced weight. </p>
+								<h2 class="major">Past Projects</h2>
+								<h3>REV9: LUDWIG (2023-2024)</h3>
+								<span class="image main"><img src="images/LUDWIG.png" alt="" /></span>
+								<span class="image main"><img src="images/ludwig_sch.png" alt="" /></span>
+								<p>Worked with a group to design, route, and assemble the first integrated dashboard and daq utilizing a Raspberry Pi CM4 in FSAE. This device provided an improved development environment for software team as running a fully-fledged Linux OS allowed for more flexible modifications (modern Rust-based dashboard running along legacy C++ data acquition software). Boasts features such as on-board SSD storage, LTE module for cloud storage, Ethernet, and enough IO to use as a desktop.</p>
+								<h3>HDMI to RGB (2023)</h3>
+								<span class="image main"><img src="images/hdmi_3d.png" alt="" /></span>
+								<span class="image main"><img src="images/hdmi_sch.png" alt="" /></span>
+								<p>Test board to ensure functional RGB signal conversion from HDMI as the CM4 on the LUDWIG only displays to HDMI. Test board reinstated skills working with ICs, high speed signals, and compoenent protection (thermal pads and TVS diodes). Successfully procured conversion system (after a lot of debugging) that remains in future revisions.</p>
+								<h3>Brake System Plausibility Device (2023)</h3>
+								<span class="image main"><img src="images/bspd.png" alt="" /></span>
+								<p>First PCB design and FSAE "rookie project". FSAE rules require a fully analog board to shutdown vehicle if brake system disengages, fails, or experiences sudden stops. Learned basic PCB design principles, decoupling capacitors, power and ground planes, via stictching, and voltage dividers.</p>
 							</article>
-						-->
 						<!-- About -->
 							<article id="about">
 								<h2 class="major">About</h2>
 								<span class="image main"><img src="images/headshot.png" alt="" /></span>
-								<p>Hi, my name is Morgan Wang, and I am an Electrical Engineering student at the University of Pennsylvania. Outside of classes, I enjoy reading webcomics, building and fixing PCs, and, more recently, playing with FPGAs. I am currently in my second season of Formula SAE and will be working on the dashboard and data acquisition device and the custom motor controller.</p>
-								<p>Feel free to reach out through email: <a href="mailto: morganwg@seas.upenn.edu">morganwg@seas.upenn.edu</a>.</p>
+								<p>Hi, my name is Morgan Wang, and I am an Electrical Engineering student at the University of Pennsylvania. I am currently in my second season of Formula SAE and will be working on the dashboard and data acquisition device and the custom motor controller.</p>
+								<p>Feel free to reach out by email: <a href="mailto: morganwg@seas.upenn.edu">morganwg@seas.upenn.edu</a>.</p>
 							</article>
 
 						<!-- Elements -->
@@ -308,7 +313,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 
 				<!-- Footer -->
 					<footer id="footer">
-						<p class="copyright">&copy; Morgan Wang</a>.</p>
+						<p class="copyright">Morgan's Portfolio</a></p>
 					</footer>
 
 			</div>
